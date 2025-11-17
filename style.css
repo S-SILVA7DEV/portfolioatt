@@ -283,7 +283,7 @@ button:hover {
 
 
 #contato {
-    background-color: #008d9442;
+
     padding: 40px 20px;
     display: flex;
     justify-content: center;
@@ -298,7 +298,7 @@ button:hover {
     background-color: #141A26;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
 }
 
 .form-group {
@@ -346,6 +346,7 @@ button:hover {
 }
 
 @media (max-width: 640px) {
+    
     .hero { flex-direction: column; align-items: center; text-align: center; }
     .intro { order: 2; }
     .foto-container { order: 1; }
@@ -360,3 +361,126 @@ button:hover {
 /* Small refinements */
 h1, h2, p { margin: 0; }
 .botoes { margin-top: 20px; }
+
+
+/* Correção de Sintaxe (Remova o erro '2 00' no font-weight do .text) */
+/* Se ainda não corrigiu, corrija o .text: */
+.text {
+    font-family: var(--font2-);
+    font-weight: 200; /* CORRIGIDO */
+    margin-top: 45px;
+    width: 80vw;
+    text-indent: 3em;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+/*----------------------------------------------------------------------*/
+
+/* MEDIA QUERY 1: Tablets e Telas Médias (max-width: 900px) */
+@media (max-width: 900px) {
+    /* [SEÇÃO HERO/INICIAL] */
+    .intro h1 { font-size: 2.4rem; }
+    .intro p { font-size: 1.8rem; }
+    .foto { width: 180px; height: 180px; }
+    .hero { padding-top: 40px; }
+
+    /* [SEÇÃO PROJETOS] */
+    .projects {
+        /* Permite quebrar para a próxima linha se não couberem */
+        flex-wrap: wrap; 
+    }
+    .flix, .login, .coffe {
+        /* Aumenta a largura em telas médias para ficarem maiores (ex: 40% cada) */
+        width: 40vw; 
+        height: 25vh;
+    }
+}
+/*----------------------------------------------------------------------*/
+
+/* MEDIA QUERY 2: Smartphones Grandes/Pequenos Tablets (max-width: 640px) */
+@media (max-width: 640px) {
+    /* [SEÇÃO GERAL] */
+    body {
+        padding: 10px;
+    }
+    .container { 
+        padding: 0 12px; 
+    }
+
+    /* [SEÇÃO HERO/INICIAL] */
+    .hero { 
+        /* Coloca a foto acima do texto (coluna) */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .intro { 
+        order: 2; /* Move o texto para baixo */
+    }
+    .foto-container { 
+        order: 1; /* Move a foto para cima */
+    }
+    .intro h1 { font-size: 1.6rem; }
+    .intro p { font-size: 1.2rem; }
+    .foto { width: 140px; height: 140px; }
+    
+    /* [NAVEGAÇÃO] */
+    nav a { 
+        display: inline-block; 
+        margin: 8px 10px; 
+        font-size: 1rem; 
+    }
+    
+    /* [BOTÕES] */
+    .botoes { 
+        justify-content: center; 
+    }
+    button {
+        /* Remove a margem esquerda para centralizar junto com o outro botão */
+        margin-left: 0; 
+        padding: 8px 15px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    /* [SEÇÃO SOBRE MIM] */
+    #sobre-mim .text {
+        width: 95vw;
+        text-indent: 1.5em; /* Diminui o recuo */
+    }
+    .text > p {
+        font-size: 1.1em; /* Reduz o tamanho da fonte */
+    }
+
+    /* [SEÇÃO PROJETOS] */
+    .projects {
+        /* Coloca os projetos em coluna para ocupar toda a largura */
+        flex-direction: column;
+    }
+    .flix, .login, .coffe {
+        /* Ocupa quase toda a largura para ficar empilhado */
+        width: 80vw; 
+        height: 35vh;
+        margin: 0 auto 20px auto; /* Centraliza e adiciona margem inferior */
+    }
+    #projects-pai {
+        /* Corrige a largura grande */
+        width: auto; 
+        height: auto; /* Remove altura fixa para não cortar o conteúdo */
+    }
+}
+/*----------------------------------------------------------------------*/
+
+/* MEDIA QUERY 3: Smartphones Pequenos (max-width: 480px) */
+@media (max-width: 480px) {
+    /* [SEÇÃO HERO/INICIAL] */
+    .intro h1 { font-size: 1.4rem; }
+    .intro p { font-size: 1rem; }
+    
+    /* [HABILIDADES] */
+    .habilidades img {
+        /* Diminui a imagem de habilidades */
+        width: 90%; 
+        max-width: 300px;
+    }
+}
