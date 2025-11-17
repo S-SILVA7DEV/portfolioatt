@@ -282,7 +282,7 @@ button:hover {
 }
 
 
-.contato {
+#contato {
     background-color: #008d9442;
     padding: 40px 20px;
     display: flex;
