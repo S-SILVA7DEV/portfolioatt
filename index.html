@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <!-- <a href="#sobre-mim">Sobre</a> -->
+            <a href="#projects-pai">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+            <div class="header finisher-header" style="width: 98.9vw; height: 300px;"></div>
+    </header>
+
+    
+
+    <main>
+        
+        <section id="about">
+            <div class="container">
+                <div class="hero">
+                    <div class="intro">
+                        <h1>Olá! Sou um Desenvolvedor</h1>
+                        <p>Front-End</p>
+                    </div>
+                    <div>
+                        <div class="foto-container">
+                            <img src="imagens/eu.jpg" class="foto" alt="Foto de Steven Oliveira">
+                        </div>
+                        <div class="meu-nome">
+                            <h2>Steven Oliveira</h2>
+                            <p> &#60;&#47; Desenvolvedor Web&#62;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="botoes">
+        <button>Sobre Mim</button>
+        <button class="btn">Contato</button>
+        </section>
+        
+        <div class="habilidades">
+        <h2>Habilidades</h2>
+        <img src="imagens/klipartz.com.png" alt="html,css,js" style="width: 400px; height: auto;">
+        </div>
+        
+        <div id="projects-pai">
+        <h2>Projetos</h2>
+        <div class="projects">
+            <a href="https://s-silva7dev.github.io/aniversario-danielle-att/" target="_blank" class="projeto-netflix">
+            <div class="flix">
+            </div>
+            </a>
+
+            <a href="https://s-silva7dev.github.io/login/" target="_blank" class="projeto-login">
+                <div class="login">
+                </div>
+            </a>
+            <a href="https://s-silva7dev.github.io/coffe/" target="_blank" class="projeto-coffe">
+                <div class="coffe">
+                </div>
+            </a>
+        </div>
+        <a href="#">Mais Projetos</a>
+        </div>
+        
+        <div id="sobre-mim">
+        <div class="text">
+            <h2>Sobre mim</h2>
+            <p>
+                Olá, me chamo <strong>Steven Oliveira</strong>, um entusiasta de tecnologia e desenvolvedor em formação.
+                
+                O que me move é a curiosidade. Comecei a programar por conta própria e me apaixonei pela capacidade de criar coisas do
+                zero. especialmente projetos complexos e pessoais, como o presente de aniversário digital que você pode ver no meu
+                portfólio. Para mim, cada projeto é um problema que eu adoro resolver.
+                
+                Meu foco tem sido em HTML, CSS e JavaScript, e estou aprofundando meus conhecimentos em React para construir
+                interfaces ainda mais ricas.
+                
+                Além da programação, meu background em Cyber Segurança me ensinou a pensar defensivamente.
+                Isso impacta como eu escrevo código, com uma preocupação constante sobre performance, tratamento de dados e a criação de
+                soluções seguras e robustas desde o início.
+            </p>
+        </div>
+        </div>
+
+        <section class="contato">
+            <h2></h2>
+            <form action="#" method="post" class="form-contact">
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" name="name" id="name" min="3" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Seu Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Me diga qual é o seu desafio. Estou pronto para ajudar a transformá-lo em código!" rows="5" required></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+<script src="finisher-header.es5.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    new FinisherHeader({
+    "count": 100,
+    "size": {
+    "min": 2,
+    "max": 8,
+    "pulse": 0
+    },
+    "speed": {
+    "x": {
+        "min": 0,
+        "max": 0.4
+    },
+    "y": {
+        "min": 0,
+        "max": 0.6
+    }
+    },
+    "colors": {
+    "background": "#201e30",
+    "particles": [
+        "#fbfcca",
+        "#d7f3fe",
+        "#ffd0a7"
+    ]
+    },
+    "blending": "overlay",
+    "opacity": {
+    "center": 1,
+    "edge": 0
+    },
+    "skew": -2,
+    "shapes": [
+    "c"
+    ]
+});
+</script>
+<script src="nav.js"></script>
+</body>
+</html>
